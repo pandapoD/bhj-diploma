@@ -1,4 +1,4 @@
-/**
+ /**
  * Класс Modal отвечает за
  * управление всплывающими окнами.
  * В первую очередь это открытие или
@@ -12,7 +12,8 @@ class Modal {
    * необходимо выкинуть ошибку.
    * */
   constructor( element ) {
-
+    this.element = element;
+    //this.registerEvents();
   }
 
   /**
@@ -42,12 +43,12 @@ class Modal {
    * со значением «block»
    * */
   open() {
-
+    this.element.style.display = "block";
   }
   /**
    * Закрывает окно: удаляет CSS-свойство display
    * */
   close(){
-
+    this.element.style.display = "none";
   }
 }

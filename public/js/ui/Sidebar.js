@@ -1,3 +1,4 @@
+// const entrance = document.querySelector( '.menu-item_register' );
 /**
  * Класс Sidebar отвечает за работу боковой колонки:
  * кнопки скрытия/показа колонки в мобильной версии сайта
@@ -29,7 +30,16 @@ class Sidebar {
    * выходу устанавливает App.setState( 'init' )
    * */
   static initAuthLinks() {
-
+    const sidebar_menu = document.querySelector( '.sidebar-menu' ); 
+    sidebar_menu.addEventListener('click', (e) => {
+      const currentElement = e.target;
+      if (currentElement.innerText === 'Вход') {
+        App.getModal('login').open();
+      }
+      if (currentElement.innerText === 'Регистрация') {
+        App.getModal('register').open();
+      }
+    })
   }
 
 }
