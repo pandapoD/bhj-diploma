@@ -11,9 +11,8 @@ class RegisterForm extends AsyncForm {
    * и закрывает окно, в котором находится форма
    * */
   onSubmit( options ) {
-  	console.log( options )
   	User.register(options);
-  	App.setState();
-  	// Modal.close().unregisterEvents();
+  	App.setState( 'user-logged' );
+  	Modal.close().unregisterEvents();
   }
 }

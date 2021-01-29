@@ -16,18 +16,15 @@ const createRequest = (options = {}) => {
     xhr.onload = function() {
         //запуск колбэка при получение ответа
         let responseObj = xhr.response;
-  		console.log(responseObj.message); 
+        console.log(xhr.response)
   		console.log(`Загружено: ${xhr.status} ${xhr.response}`);
+        options.callback(responseObj); 
   		return responseObj;
     };
     xhr.onerror = function() {
         //отработка ошибок
-        console.log(`Ошибка соединения`)
+        alert(`${xhr.status} + ': ' + ${xhr.statusText}`);
     };
-
-//     // xhr.onprogress = function(event) {
-//     // 	console.log(`Загружено ${event.loaded} из ${event.total}`);
-//     // };
 
     xhr.withCredentials = true;
 
@@ -35,14 +32,14 @@ const createRequest = (options = {}) => {
         //формируете get запрос
         console.log(options.url)
         console.log(url);
-        url = `${options.url}` + '?' + `${encodeURI(options.data)}`//надо придумать и дописать данные в строчном виде с = и &
+        url = `${options.url}` + '?' + `${encodeURI(options.data)}`;
         requestData = '';
         console.log(url)
     }
     else {
         //формируете post запрос
         requestData = options.data;
-        console.log(options.data)
+        console.log(options.data);
     }
     try {
         xhr.open(options.method, url);
@@ -54,7 +51,6 @@ const createRequest = (options = {}) => {
         return xhr;
     }
     console.log(xhr)
-    console.log(xhr.response)
     return xhr;
 };
 
@@ -64,29 +60,5 @@ function encodeURI(url) {
 }
 
 
-// // // 	if (options.method === 'GET') {
-// // // 		options.url = `${options.url}` + '?' //надо придумать и дописать данные в строчном виде с = и &
-// // // 	} else { //возможно else совсем можно будет убрать
-// // // 		console.log(options.url);
-// // // 		console.log(options.data)
-// // // 		options.url = `${options.url}`;
-// // // 		options.data = `${options.data}`;
-// // // 		console.log(options.url)
-// // // 		console.log(options.data)
-// // // 	}
-// // // 	options.callback()
-// // // 	console.log(response)
 
-// // // // const request = new XMLHttpRequest,
-// // // // request.open( options.method, options.url );
-// // // // request.send( options.data );
-   
-// // //     // callback: ( err, response ) => {
-// // //       /*
-// // //         при успешном выполнении err = null, response содержит данные ответа
-// // //       */
-// // //     //   console.log( err ); // null
-// // //     //   console.log( response ); // ответ
-// // //     // }
-// // //   };
 
