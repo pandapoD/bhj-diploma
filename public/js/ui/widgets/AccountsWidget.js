@@ -13,7 +13,12 @@ class AccountsWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor( element ) {
-
+    if (!element) {
+      throw new Error('Элемент не существует');
+    }
+    this.element = element;
+    this.registerEvents();
+    this.update();
   }
 
   /**
@@ -24,7 +29,15 @@ class AccountsWidget {
    * вызывает AccountsWidget.onSelectAccount()
    * */
   registerEvents() {
-
+    const buttonNewAccount = this.element.querySelector('.create-account');
+    buttonNewAccount.addEventListener('click', () => App.getModal( 'createAccount' ).open()); //--- !!!ДОРАБОТАТЬ При нажатии на один из существующих счетов (которые отображены в боковой колонке), вызывает AccountsWidget.onSelectAccount()
+    this.element.addEventListener('click', (e) => {
+      const currentElement = e.target;
+      const account = currentElement.closest('.account')
+      if (account && account.classList.contains('account')) {
+        this.onSelectAccount(currentElement);
+      }
+    });
   }
 
   /**
@@ -38,7 +51,11 @@ class AccountsWidget {
    * метода renderItem()
    * */
   update() {
-
+    const currentUser = User.current();
+    if (!currentUser) {
+      return;
+    }
+    
   }
 
   /**

@@ -11,14 +11,18 @@ class TransactionsPage {
    * через registerEvents()
    * */
   constructor( element ) {
-
+     if (!element) {
+      throw new Error('Элемент не существует');
+    }
+    this.element = element;
+    this.registerEvents();
   }
 
   /**
    * Вызывает метод render для отрисовки страницы
    * */
   update() {
-
+    this.render();
   }
 
   /**

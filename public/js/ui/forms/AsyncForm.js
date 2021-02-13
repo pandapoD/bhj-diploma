@@ -39,15 +39,13 @@ class AsyncForm {
    * }
    * */
    getData() {
-    const formData = new FormData( this.element ),
-    entries = formData.entries();
-
-    for (let item of entries) {
-      const key = item[ 0 ],
-      value = item[ 1 ];
-      formData[`${key}`] = `${value}`
-    }
-    return formData;
+    return Object.values(this.element).reduce((sum, current) => {
+      if(!current.value) {
+        return sum;
+      }
+      sum[current.name] = current.value;
+      return sum;
+    }, {});
   }
 
   onSubmit( options ) {
@@ -59,7 +57,6 @@ class AsyncForm {
    * данные, полученные из метода getData()
    * */
   submit() {
-    const data = this.getData();
-    this.onSubmit(data);
+    this.onSubmit(this.getData());
   }
 }

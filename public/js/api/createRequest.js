@@ -1,57 +1,40 @@
-// // /**
-// //  * Основная функция для совершения запросов
-// //  * на сервер.
-// //  * */
+/**
+ * Основная функция для совершения запросов
+ * на сервер.
+ * */
 const createRequest = (options = {}) => {
-	const f = function () {},
-        {
-          data //здесь значения объекта с параметрами из передаваемого атрибута функции
-        } = options,
     xhr = new XMLHttpRequest();
-    let { url } = options;
-    let requestData;
-    if (xhr.responseType) {
-        xhr.responseType = 'json';//присваиваете для xhr responseType
-    }
-    xhr.onload = function() {
-        //запуск колбэка при получение ответа
-        let responseObj = xhr.response;
-        console.log(xhr.response)
-  		console.log(`Загружено: ${xhr.status} ${xhr.response}`);
-        options.callback(responseObj); 
-  		return responseObj;
+    let { url, method, data, callback } = options;
+    let formData = new FormData();
+    xhr.onload = function() {           //запуск колбэка при получение ответа
+        let responseObj = JSON.parse(this.responseText);
+        console.log(responseObj)
+        if (this.readyState == 4 && this.status == 200) {
+            err = null;
+            response = responseObj;
+            callback(err, response); 
+        }
     };
-    xhr.onerror = function() {
-        //отработка ошибок
-        alert(`${xhr.status} + ': ' + ${xhr.statusText}`);
+    xhr.onerror = function() {          //отработка ошибок
+        callback(err, response);
     };
 
     xhr.withCredentials = true;
 
-    if ( options.method === 'GET' ) {
-        //формируете get запрос
-        console.log(options.url)
-        console.log(url);
-        url = `${options.url}` + '?' + `${encodeURI(options.data)}`;
-        requestData = '';
-        console.log(url)
+    if (method === 'GET') {           
+        url = `${url}` + '?' + `${encodeURI(data)}`;
     }
     else {
-        //формируете post запрос
-        requestData = options.data;
-        console.log(options.data);
+       Object.entries(data).forEach(([key, value]) => formData.append(`${key}`, `${value}`));  
+       console.log(formData)      
     }
     try {
-        xhr.open(options.method, url);
-        xhr.send( requestData );
+        xhr.open(method, url);
+        xhr.send( formData );
     }
     catch ( err ) {
-        error.call( this, err );
-        callback.call( this, err );
-        return xhr;
+        alert( 'Запрос не удалось отправить. Повторите попытку.' );
     }
-    console.log(xhr)
-    return xhr;
 };
 
 

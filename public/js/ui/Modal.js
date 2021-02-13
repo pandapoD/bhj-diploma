@@ -26,9 +26,7 @@ class Modal {
    * */
   registerEvents() {
     this.closeButtons = [...this.element.querySelectorAll('[data-dismiss]')];
-    this.closeButtons.forEach((button) => button.addEventListener('click', (e) => {
-      this.onClose(e)
-    }));
+    this.closeButtons.forEach((button) => button.addEventListener('click', (e) => this.onClose(e)));
   }
 
   /**
@@ -36,14 +34,14 @@ class Modal {
    * Закрывает текущее окно (Modal.close())
    * */
   onClose( e ) {
-     e.preventDefault();
+    e.preventDefault();
     this.close();
   }
   /**
    * Удаляет обработчики событий
    * */
   unregisterEvents() {
-    this.closeElements.forEach((button) => button.removeEventListener('click', this.onClose));
+    this.closeButtons.forEach((button) => button.removeEventListener('click', (e) => this.onClose(e)));
   }
   /**
    * Открывает окно: устанавливает CSS-свойство display

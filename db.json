@@ -12,20 +12,111 @@
       "email": "demo@demo.ru",
       "password": "demo",
       "id": "13peb78okk9kf9c7",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo1",
       "email": "demo1@demo.ru",
       "password": "demo1",
       "id": "13peb29okk9qhmzl",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo2",
       "email": "demo2@demo.ru",
       "password": "demo2",
       "id": "13peb8ikkk9xb6nt",
+      "isAuthorized": false
+    },
+    {
+      "name": "demo3",
+      "email": "demo3@demo.ru",
+      "password": "demo",
+      "id": "13peb81wkkjtjmog",
+      "isAuthorized": false
+    },
+    {
+      "name": "demo4",
+      "email": "demo4@demo.ru",
+      "password": "demo4",
+      "id": "13peb4g4kkmvh0da",
+      "isAuthorized": false
+    },
+    {
+      "name": "demo5",
+      "email": "demo5@demo.ru",
+      "password": "demo5",
+      "id": "13peb81gkkmw1r4r",
+      "isAuthorized": false
+    },
+    {
+      "name": "demo6",
+      "email": "demo6@demo.ru",
+      "password": "demo6",
+      "id": "13peb8xkkkmw5y52",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo7",
+      "email": "demo7@demo.ru",
+      "password": "demo7",
+      "id": "13peb8b4kkmxc0qg",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo8",
+      "email": "demo8@demo.ru",
+      "password": "demo8",
+      "id": "13peb44okkmxdsct",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo9",
+      "email": "demo9@demo.ru",
+      "password": "de",
+      "id": "13peb7kkkkvz148l",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo10",
+      "email": "demo10@demo.ru",
+      "password": "demo10",
+      "id": "13pebbsckky9dzw1",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo11",
+      "email": "demo11@demo.ru",
+      "password": "demo",
+      "id": "13pebbrckkyrj7kr",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo12",
+      "email": "demo12@demo.ru",
+      "password": "demo",
+      "id": "13peb1ckkkys3tw6",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo13",
+      "email": "demo13@demo.ru",
+      "password": "demo",
+      "id": "13peb5wgkkysbuww",
+      "isAuthorized": true
+    },
+    {
+      "name": "demo14",
+      "email": "demo14@demo.ru",
+      "password": "demo",
+      "id": "13peb8iskkysl13k",
+      "isAuthorized": true
+    },
+    {
+      "name": "Евгения",
+      "email": "test@test.ru",
+      "password": "1234",
+      "id": "13peb6vokkze686j",
       "isAuthorized": true
     }
   ],
@@ -44,6 +135,36 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb81wkkjtjmog",
+      "id": "13peb4hwkl238xww"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb81wkkjtjmog",
+      "id": "13peb4mgkl23j11o"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb97okl399366"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb6vkkl39d5fp"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebiskl39fzx4"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peba50kl3btpms"
     }
   ],
   "transactions": [
