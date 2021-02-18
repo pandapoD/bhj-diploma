@@ -54,28 +54,28 @@
       "email": "demo6@demo.ru",
       "password": "demo6",
       "id": "13peb8xkkkmw5y52",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo7",
       "email": "demo7@demo.ru",
       "password": "demo7",
       "id": "13peb8b4kkmxc0qg",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo8",
       "email": "demo8@demo.ru",
       "password": "demo8",
       "id": "13peb44okkmxdsct",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo9",
       "email": "demo9@demo.ru",
       "password": "de",
       "id": "13peb7kkkkvz148l",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo10",
@@ -165,6 +165,276 @@
       "name": "Cash",
       "user_id": "13peb8xkkkmw5y52",
       "id": "13peba50kl3btpms"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb4iskl3grgoi"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb114kl3i80s5"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb2m4kl3ljjat"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb6w8kl3lq1x2"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebbvgkl3n3npf"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb4igkl3n5lkx"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb978kl3p48dk"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb398kl3p7ajp"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb74wkl3p8lsk"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb5j8kl3pd12t"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb720kl3s0prn"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebcvgkl3yrqta"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb6akkl3yuq4a"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebbxgkl3yvpb1"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebbkgkl3z4tk2"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb2e8kl3z70ai"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb158kl3zhx0l"
+    },
+    {
+      "name": "Bank2",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb59okl3zp4iz"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb9iokl3zwfqq"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb71skl40he24"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb8dkkl40k2yx"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebbegkl40mw18"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb23ckl414lk3"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebd4ckl41c44e"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb7iwkl41dm93"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb7skl41jh99"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb65okl41k220"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb6r4kl41osw6"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb5h4kl424vma"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb5rkkl425ez3"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb6dgkl53orgx"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebahwkl54gg4n"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb8t0kl54lrhz"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb6uwkl54r5ou"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13pebikkl551kzu"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb8rokl55s8bn"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb2zckl5600st"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb4ookl564sbb"
+    },
+    {
+      "name": "Bank2",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb580kl565bez"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb3d4kl56db07"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb31wkl56joqs"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8xkkkmw5y52",
+      "id": "13peb8qokl573i1m"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb8b4kkmxc0qg",
+      "id": "13peb2jckl9ht9zn"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb8b4kkmxc0qg",
+      "id": "13peb178kl9hthwm"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb44okkmxdsct",
+      "id": "13peb8z8klafol4k"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb44okkmxdsct",
+      "id": "13peb5p4klafsroc"
+    },
+    {
+      "name": "Bank2",
+      "user_id": "13peb44okkmxdsct",
+      "id": "13peb79cklaft0id"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb7kkkkvz148l",
+      "id": "13peb6s0klaj7s2y"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb7kkkkvz148l",
+      "id": "13peb1w8klaj7yxh"
+    },
+    {
+      "name": "Bank2",
+      "user_id": "13peb7kkkkvz148l",
+      "id": "13peba40klaj839m"
+    },
+    {
+      "name": "Bank3",
+      "user_id": "13peb7kkkkvz148l",
+      "id": "13peb518klan424q"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13pebbsckky9dzw1",
+      "id": "13peb6r8klb72rtq"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13pebbsckky9dzw1",
+      "id": "13peb3voklb776oi"
+    },
+    {
+      "name": "Bank2",
+      "user_id": "13pebbsckky9dzw1",
+      "id": "13peb7p4klb77m9z"
     }
   ],
   "transactions": [
@@ -302,6 +572,94 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "13peb2osklaj8nil",
+      "type": "INCOME",
+      "name": "Wage",
+      "sum": 50000,
+      "account_id": "13peb5p4klafsroc",
+      "created_at": "2021-02-18T07:18:09.164Z"
+    },
+    {
+      "id": "13peb8i0klam7wa5",
+      "type": "INCOME",
+      "name": "иет",
+      "sum": 50000,
+      "account_id": "13peb6s0klaj7s2y",
+      "created_at": "2021-02-18T08:41:32.716Z"
+    },
+    {
+      "id": "13peb3bkklam8hce",
+      "type": "EXPENSE",
+      "name": "demo",
+      "sum": 500,
+      "account_id": "13peb6s0klaj7s2y",
+      "created_at": "2021-02-18T08:42:00.013Z"
+    },
+    {
+      "id": "13peb1x8klam9528",
+      "type": "INCOME",
+      "name": "demo1",
+      "sum": 4500,
+      "account_id": "13peb1w8klaj7yxh",
+      "created_at": "2021-02-18T08:42:30.751Z"
+    },
+    {
+      "id": "13peb4ywklamau8c",
+      "type": "EXPENSE",
+      "name": "рмло",
+      "sum": 350,
+      "account_id": "13peb1w8klaj7yxh",
+      "created_at": "2021-02-18T08:43:50.027Z"
+    },
+    {
+      "id": "13peb8voklambm2m",
+      "type": "INCOME",
+      "name": "лоил",
+      "sum": 12000,
+      "account_id": "13peba40klaj839m",
+      "created_at": "2021-02-18T08:44:26.109Z"
+    },
+    {
+      "id": "13peb6egklamc7w4",
+      "type": "EXPENSE",
+      "name": "demo",
+      "sum": 853,
+      "account_id": "13peba40klaj839m",
+      "created_at": "2021-02-18T08:44:54.387Z"
+    },
+    {
+      "id": "13peb3mgklb6ouss",
+      "type": "INCOME",
+      "name": "Премия",
+      "sum": 6000,
+      "account_id": "13peb6s0klaj7s2y",
+      "created_at": "2021-02-18T18:14:36.267Z"
+    },
+    {
+      "id": "13peb868klb736fw",
+      "type": "INCOME",
+      "name": "demo",
+      "sum": 4500,
+      "account_id": "13peb6r8klb72rtq",
+      "created_at": "2021-02-18T18:25:44.539Z"
+    },
+    {
+      "id": "13peba1wklb76mk8",
+      "type": "INCOME",
+      "name": "demo1",
+      "sum": 12000,
+      "account_id": "13peb6r8klb72rtq",
+      "created_at": "2021-02-18T18:28:25.399Z"
+    },
+    {
+      "id": "13pebafgklb789pj",
+      "type": "INCOME",
+      "name": "food",
+      "sum": 1300,
+      "account_id": "13peb3voklb776oi",
+      "created_at": "2021-02-18T18:29:42.054Z"
     }
   ]
 }

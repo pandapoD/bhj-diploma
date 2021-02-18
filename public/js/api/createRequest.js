@@ -5,10 +5,12 @@
 const createRequest = (options = {}) => {
     xhr = new XMLHttpRequest();
     let { url, method, data, callback } = options;
+    if (!data) {
+        return;
+    }
     let formData = new FormData();
     xhr.onload = function() {           //запуск колбэка при получение ответа
         let responseObj = JSON.parse(this.responseText);
-        console.log(responseObj)
         if (this.readyState == 4 && this.status == 200) {
             err = null;
             response = responseObj;

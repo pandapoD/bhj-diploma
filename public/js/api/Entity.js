@@ -25,7 +25,6 @@ class Entity {
    * */
   static create( data, callback = f => f ) {
     const newData = Object.assign({ _method: 'PUT' }, data );
-    console.log(newData);
     return createRequest({
       data: newData,
       url: this.url,
@@ -39,7 +38,12 @@ class Entity {
    * (в зависимости от того, что наследуется от Entity)
    * */
   static get( id = '', data, callback = f => f ) {
-
+    return createRequest({
+      data,
+      url: `${this.url}/${id}`,
+      method: 'GET',
+      callback,
+    }) 
   }
 
   /**
@@ -47,7 +51,13 @@ class Entity {
    * (в зависимости от того, что наследуется от Entity)
    * */
   static remove( id = '', data, callback = f => f ) {
-
+    const newData = Object.assign({ _method: 'DELETE' }, data );
+    return createRequest({
+      data: newData,
+      url: this.url,
+      method: 'POST',
+      callback,
+    })
   }
 }
 

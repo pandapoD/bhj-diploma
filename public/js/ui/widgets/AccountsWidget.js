@@ -30,7 +30,7 @@ class AccountsWidget {
    * */
   registerEvents() {
     const buttonNewAccount = this.element.querySelector('.create-account');
-    buttonNewAccount.addEventListener('click', () => App.getModal( 'createAccount' ).open()); //--- !!!ДОРАБОТАТЬ При нажатии на один из существующих счетов (которые отображены в боковой колонке), вызывает AccountsWidget.onSelectAccount()
+    buttonNewAccount.addEventListener('click', () => App.getModal( 'createAccount' ).open());
     this.element.addEventListener('click', (e) => {
       const currentElement = e.target;
       const account = currentElement.closest('.account')
@@ -55,7 +55,14 @@ class AccountsWidget {
     if (!currentUser) {
       return;
     }
-    
+    Account.list(currentUser, (err, data) => {
+      this.clear()
+      if (err == null) {
+        this.renderItem(data);
+      }
+      
+    });    
+    ;
   }
 
   /**
@@ -64,7 +71,8 @@ class AccountsWidget {
    * в боковой колонке
    * */
   clear() {
-
+    const accountElements = [...this.element.querySelectorAll('.account')];
+    accountElements.forEach((element) => element.remove());
   }
 
   /**
@@ -75,7 +83,15 @@ class AccountsWidget {
    * Вызывает App.showPage( 'transactions', { account_id: id_счёта });
    * */
   onSelectAccount( element ) {
-
+     const accounts = [...this.element.querySelectorAll('.account')];
+     accounts.forEach((account) => {
+      if (account.classList.contains('active')) {
+        account.classList.remove('active');
+        return;
+      }
+     });
+     element.closest('.account').classList.add('active');
+     App.showPage('transactions', { account_id: element.closest('.account').dataset.id });
   }
 
   /**
@@ -84,7 +100,12 @@ class AccountsWidget {
    * item - объект с данными о счёте
    * */
   getAccountHTML( item ) {
-
+     return `<li class="account" data-id="${item.id}">
+      <a href="#">
+        <span>${item.name}</span> /
+        <span>${item.sum} ₽</span>
+      </a>
+    </li>`
   }
 
   /**
@@ -94,6 +115,9 @@ class AccountsWidget {
    * и добавляет его внутрь элемента виджета
    * */
   renderItem( item ) {
-
+    const accounts = item.data;
+    const accountСontainer = this.element.querySelector('li');
+    let template = accounts.map((account) => this.getAccountHTML(account)).join(' ');
+    accountСontainer.insertAdjacentHTML('afterbegin', template);
   }
 }
