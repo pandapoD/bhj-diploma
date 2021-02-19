@@ -64,8 +64,11 @@ class TransactionsPage {
     if (!confirmMsg) {
       return;
     }
-    Account.remove(this.lastOptions, User.current(), () => App.update());
-    this.clear();    
+    Account.remove(this.lastOptions, User.current(), () => {
+      this.clear({data: []});
+      App.update();
+    
+    });    
   }
 
   /**

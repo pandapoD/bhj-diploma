@@ -708,28 +708,28 @@
       "created_at": "2021-02-19T14:06:24.496Z"
     },
     {
-      "id": "13peb3g4klcettuq",
+      "id": "13peb8n8klcjfiy8",
       "type": "INCOME",
-      "name": "Премия",
-      "sum": 50000,
+      "name": "demo1",
+      "sum": 4500,
       "account_id": "13peb9ckklcet06b",
-      "created_at": "2021-02-19T14:50:11.425Z"
+      "created_at": "2021-02-19T16:59:02.191Z"
     },
     {
-      "id": "13peb5zgklceuhvi",
+      "id": "13pebbnsklcjfvzh",
+      "type": "INCOME",
+      "name": "demo4",
+      "sum": 7400,
+      "account_id": "13peb9ckklcet06b",
+      "created_at": "2021-02-19T16:59:19.084Z"
+    },
+    {
+      "id": "13peb5jkklcjgg43",
       "type": "EXPENSE",
-      "name": "Еда",
-      "sum": 3500,
+      "name": "demo11",
+      "sum": 1350,
       "account_id": "13peb9ckklcet06b",
-      "created_at": "2021-02-19T14:50:42.557Z"
-    },
-    {
-      "id": "13peb9soklcfbl10",
-      "type": "INCOME",
-      "name": "З/п",
-      "sum": 2000,
-      "account_id": "13peb9ckklcet06b",
-      "created_at": "2021-02-19T15:03:59.795Z"
+      "created_at": "2021-02-19T16:59:45.170Z"
     }
   ]
 }

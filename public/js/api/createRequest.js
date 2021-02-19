@@ -27,8 +27,7 @@ const createRequest = (options = {}) => {
         url = `${url}` + '?' + `${encodeURI(data)}`;
     }
     else {
-       Object.entries(data).forEach(([key, value]) => formData.append(`${key}`, `${value}`));  
-       console.log(formData)      
+       Object.entries(data).forEach(([key, value]) => formData.append(`${key}`, `${value}`));       
     }
     try {
         xhr.open(method, url);
