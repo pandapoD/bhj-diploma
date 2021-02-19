@@ -64,11 +64,8 @@ class TransactionsPage {
     if (!confirmMsg) {
       return;
     }
-    Account.remove(this.lastOptions, User.current(), () => {
-      this.clear();
-      App.update();
-    });
-    
+    Account.remove(this.lastOptions, User.current(), () => App.update());
+    this.clear();    
   }
 
   /**
@@ -113,7 +110,7 @@ class TransactionsPage {
    * Устанавливает заголовок: «Название счёта»
    * */
   clear() {
-    this.renderTransactions('[]');
+    this.renderTransactions({data: []});
     this.renderTitle({data: {name: 'Название счёта'}});
   }
 

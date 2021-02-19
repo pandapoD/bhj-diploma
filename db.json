@@ -82,14 +82,14 @@
       "email": "demo10@demo.ru",
       "password": "demo10",
       "id": "13pebbsckky9dzw1",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo11",
       "email": "demo11@demo.ru",
       "password": "demo",
       "id": "13pebbrckkyrj7kr",
-      "isAuthorized": true
+      "isAuthorized": false
     },
     {
       "name": "demo12",
@@ -435,6 +435,36 @@
       "name": "Bank2",
       "user_id": "13pebbsckky9dzw1",
       "id": "13peb7p4klb77m9z"
+    },
+    {
+      "name": "demo",
+      "user_id": "13pebbsckky9dzw1",
+      "id": "13pebblwklccv34i"
+    },
+    {
+      "name": "demo1",
+      "user_id": "13pebbsckky9dzw1",
+      "id": "13pebaokklccw055"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13pebbrckkyrj7kr",
+      "id": "13pebbbcklcd8dlo"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13pebbrckkyrj7kr",
+      "id": "13peb21oklcd8i2h"
+    },
+    {
+      "name": "Cash",
+      "user_id": "13peb1ckkkys3tw6",
+      "id": "13peb9ckklcet06b"
+    },
+    {
+      "name": "Bank",
+      "user_id": "13peb1ckkkys3tw6",
+      "id": "13peb574klcet4hi"
     }
   ],
   "transactions": [
@@ -660,6 +690,46 @@
       "sum": 1300,
       "account_id": "13peb3voklb776oi",
       "created_at": "2021-02-18T18:29:42.054Z"
+    },
+    {
+      "id": "13pebbagklcd99oh",
+      "type": "INCOME",
+      "name": "З/п",
+      "sum": 50000,
+      "account_id": "13pebbbcklcd8dlo",
+      "created_at": "2021-02-19T14:06:12.544Z"
+    },
+    {
+      "id": "13pebajgklcd9iwh",
+      "type": "EXPENSE",
+      "name": "Еда",
+      "sum": 3500,
+      "account_id": "13pebbbcklcd8dlo",
+      "created_at": "2021-02-19T14:06:24.496Z"
+    },
+    {
+      "id": "13peb3g4klcettuq",
+      "type": "INCOME",
+      "name": "Премия",
+      "sum": 50000,
+      "account_id": "13peb9ckklcet06b",
+      "created_at": "2021-02-19T14:50:11.425Z"
+    },
+    {
+      "id": "13peb5zgklceuhvi",
+      "type": "EXPENSE",
+      "name": "Еда",
+      "sum": 3500,
+      "account_id": "13peb9ckklcet06b",
+      "created_at": "2021-02-19T14:50:42.557Z"
+    },
+    {
+      "id": "13peb9soklcfbl10",
+      "type": "INCOME",
+      "name": "З/п",
+      "sum": 2000,
+      "account_id": "13peb9ckklcet06b",
+      "created_at": "2021-02-19T15:03:59.795Z"
     }
   ]
 }

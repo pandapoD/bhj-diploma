@@ -117,7 +117,8 @@ class AccountsWidget {
   renderItem( item ) {
     const accounts = item.data;
     const accountСontainer = this.element.querySelector('li');
+    console.log(accountСontainer)
     let template = accounts.map((account) => this.getAccountHTML(account)).join(' ');
-    accountСontainer.insertAdjacentHTML('afterbegin', template);
+    accountСontainer.insertAdjacentHTML('afterend', template);
   }
 }
