@@ -64,7 +64,8 @@ class TransactionsPage {
     if (!confirmMsg) {
       return;
     }
-    Account.remove(this.lastOptions, User.current(), () => {
+    console.log(this.lastOptions)
+    Account.remove(this.lastOptions.account_id, User.current(), () => {
       this.clear({data: []});
       App.update();
     
