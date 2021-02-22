@@ -11,8 +11,8 @@ const createRequest = (options = {}) => {
     let formData = new FormData();
     xhr.onload = function() {           //запуск колбэка при получение ответа
         let err;
-        let responseObj = JSON.parse(this.responseText);
         if (this.readyState == 4 && this.status == 200) {
+            let responseObj = JSON.parse(this.responseText);
             err = null;
             response = responseObj;
             callback(err, response); 

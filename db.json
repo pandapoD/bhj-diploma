@@ -117,7 +117,7 @@
       "email": "test@test.ru",
       "password": "1234",
       "id": "13peb6vokkze686j",
-      "isAuthorized": false
+      "isAuthorized": true
     }
   ],
   "accounts": [
@@ -727,6 +727,22 @@
       "sum": 50000,
       "account_id": "13peb2v4kldtulsv",
       "created_at": "2021-02-20T14:38:36.342Z"
+    },
+    {
+      "id": "13peb3voklg6bh7j",
+      "type": "INCOME",
+      "name": "sava",
+      "sum": 12000,
+      "account_id": "13peb8g8klg6b6t8",
+      "created_at": "2021-02-22T06:03:03.006Z"
+    },
+    {
+      "id": "13peb6q8klg6cpre",
+      "type": "EXPENSE",
+      "name": "wegwgwg",
+      "sum": 3500,
+      "account_id": "13peb8g8klg6b6t8",
+      "created_at": "2021-02-22T06:04:00.745Z"
     }
   ]
 }
